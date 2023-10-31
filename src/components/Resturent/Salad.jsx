@@ -8,8 +8,7 @@ export default function Salad() {
       "https://forkify-api.herokuapp.com/api/v2/recipes?search=salad"
     );
     let data =await reponse.json();
-
-    setSalad(salad.recpices);
+    setSalad(data.data.recipes);
   };
 
   useEffect(() => {
@@ -23,6 +22,7 @@ export default function Salad() {
           <div className="col-md-4 p-5 text-center" key={elem.id}>
             <h2 className="">{elem.title}</h2>
             <img src={elem.image_url} className="w-50 pt-5"></img>
+            <p className="pt-4">{elem.publisher}</p>
           </div>
         );
       })}

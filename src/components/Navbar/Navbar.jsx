@@ -10,10 +10,10 @@ function BasicExample() {
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Link to='/'>Home</Link>
-            <Link to='/products'>Products</Link>
-            <Link to="/resturent">Resturent</Link>
+          <Nav className="ms-auto">
+            <Link to='/' className='text-black pe-3'>Home</Link>
+            <Link to='/products' className='text-black pe-3'>Products</Link>
+            <Link to='/resturent' className='text-black pe-3'>Resturent</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
